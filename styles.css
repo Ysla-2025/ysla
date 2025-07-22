@@ -1,4007 +1,624 @@
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-/* navigasi */
-#navigasi-beranda {
-  background-color: rgb(143, 2, 2);
-  position: sticky;
-  top: 0;
-}
-.navigasi-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 120px;
-}
-.navigasi-flex label,
-#humberger {
-  display: none;
-}
-nav ul {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-nav ul li a {
-  display: block;
-  color: aqua;
-  padding: 25px 8px;
-  text-decoration: none;
-  line-height: 60px;
-  text-transform: uppercase;
-}
-nav ul li a:hover {
-  transition: all 0.5s;
-  color: chocolate;
-}
-.navigasi-menu {
-  display: flex;
-}
-.navigasi-menu img {
-  width: 100px;
-  height: 100px;
-  margin: 20px 0 0 20px;
-}
-.navigasi-menu h2 {
-  margin-top: 20px;
-  color: aquamarine;
-  margin-left: 15px;
-}
-.navigasi-menu p {
-  display: flex;
-  color: burlywood;
-  text-align: center;
-  position: absolute;
-  margin-left: 136px;
-  margin-top: 80px;
-}
-
-/* Hero Image */
-#hero {
-  background-image: url(media/Hero\ Image.jpg);
-  height: 100vh;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.text {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-align: center;
-}
-.text p {
-  font-size: 15px;
-  margin-top: -70px;
-  color: rgb(238, 47, 13);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.text h2 {
-  font-size: 50px;
-  color: rgb(238, 47, 13);
-  margin-top: 500px;
-  padding-bottom: 20px;
-}
-
-/* Tentang Kami */
-
-#tka {
-  margin-left: 15px;
-}
-#tka h2 {
-  margin: 50px 0 2px 0;
-  font-size: 45px;
-}
-#tka .tka-flex {
-  display: flex;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.tka-desk p {
-  font-size: 16px;
-  font-style: normal;
-  line-height: 25px;
-  text-indent: 40px;
-  text-align: justify;
-  margin-right: 25px;
-}
-.tka-video iframe {
-  margin-top: 15px;
-  border-radius: 10px;
-}
-.tka-video button {
-  border-radius: 5px;
-  margin-top: 5px;
-  color: rgb(235, 171, 171);
-  background-color: rgb(1, 125, 240);
-  margin-left: 175px;
-  padding: 5px;
-}
-.tka-video button:hover {
-  background-color: #128c7e;
-}
-.tka-video a {
-  padding: 5px 5px;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-/* Kegiatan  */
-#kegiatan {
-  margin-left: 15px;
-}
-#kegiatan h2 {
-  margin: 50px 0 2px 0;
-  font-size: 45px;
-}
-.kegi-flex {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px auto;
-}
-.rumah {
-  width: 50%;
-  text-align: center;
-  padding: 20px 10px;
-  justify-content: center;
-}
-.rumah img {
-  width: 350px;
-  height: 400px;
-  border-radius: 5px;
-}
-.rumah p {
-  margin-top: -3px;
-}
-
-/* Kaber */
-#kaber {
-  margin: 5px;
-}
-#kaber h2 {
-  margin: 50px 0 2px 0;
-  font-size: 45px;
-}
-.kaber-flex {
-  display: flex;
-  margin-left: 5px;
-}
-.kaber-text p {
-  font-size: small;
-}
-.kaber-text h3 {
-  text-decoration: underline;
-}
-.kaber-text p {
-  font-size: 16px;
-  font-style: normal;
-  line-height: 25px;
-  text-indent: 40px;
-  text-align: justify;
-  margin-right: 25px;
-}
-.kaber-file img {
-  width: 150px;
-  height: 150px;
-  margin-top: 15px;
-  border-radius: 5px;
-}
-.kaber-file p {
-  text-align: center;
-  background-color: #3b589838;
-  border-radius: 10px;
-}
-.kaber-file p a {
-  text-decoration: none;
-  margin-top: -5px;
-}
-.kaber-file p:hover {
-  background-color: #ff000091;
-}
-.kaber-file button {
-  text-align: center;
-  background-color: burlywood;
-  margin-left: 20px;
-  border-radius: 5px;
-  padding: 5px;
-}
-.kaber-file button:hover {
-  background-color: #128c7e;
-}
-.kaber-file button a {
-  text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 5px;
-}
-
-/* Contact */
-#contact {
-  width: 95%;
-  margin-left: 15px;
-}
-#contact h2 {
-  margin: 50px 5px 2px 5px;
-  font-size: 45px;
-}
-.contact-deskripsi {
-  text-align: center;
-  font-size: 15px;
-  text-decoration: underline;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.contact-button {
-  text-decoration: none;
-  display: inline-block;
-  margin-left: 420px;
-  background-color: #128c7e;
-  padding: 10px;
-  color: cyan;
-  font-size: 16px;
-  border-radius: 10px;
-}
-.contact-button:hover {
-  background-color: darkgreen;
-  color: beige;
-}
-
-.contact-flex {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0 0 30px;
-  width: 100%;
-}
-.map {
-  width: 60%;
-}
-.map h3 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-.map iframe {
-  border-radius: 10px;
-}
-.sosial-media {
-  width: 40%;
-}
-.sosial-media h3 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-.sosial-icon {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-  text-decoration: none;
-  color: cyan;
-  padding: 10px;
-  border-radius: 10px;
-}
-.facebook {
-  background-color: #3b5998;
-}
-.x {
-  background-color: black;
-}
-.tiktok {
-  background-color: #010101;
-}
-.youtube {
-  background-color: #ff0000;
-}
-.instagram {
-  background-color: #bc2a8d;
-}
-.sosial-icon:hover {
-  opacity: 0.5;
-}
-
-/* Close */
-
-#close hr {
-  margin: 50px 0 30px 0;
-}
-#close p {
-  text-align: center;
-  background-color: rgba(210, 105, 30, 0.616);
-  padding: 10px;
-}
-
-/* 2. TEKA */
-#teka {
-  background-color: rgba(0, 0, 0, 0.048);
-}
-
-#teka h1 {
-  color: rgb(245, 245, 245);
-  text-align: center;
-  background-color: rgba(121, 8, 8, 0.822);
-  padding: 15px;
-  font-family: broadway;
-}
-.seja-flex {
-  display: flex;
-  width: 100%;
-}
-.seja-text {
-  width: 60%;
-  margin-left: 15px;
-}
-.seja-video {
-  width: 40%;
-}
-.seja-text h2 {
-  color: rgb(71, 41, 2);
-  padding: 10px;
-  text-align: center;
-  margin-left: 15px;
-}
-.seja-text p {
-  text-align: justify;
-  text-indent: 30px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.seja-video iframe {
-  border-radius: 10px;
-  margin-top: 80px;
-  margin-left: 25px;
-}
-.seja-video p {
-  text-align: center;
-  margin-top: -3px;
-}
-.teka-vimi h2 {
-  color: rgb(71, 41, 2);
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-bottom: 45px;
-  text-align: center;
-}
-.vimi {
-  display: flex;
-  width: 100%;
-  margin-top: 40px;
-}
-.vimi-media {
-  width: 50%;
-  margin-left: 20px;
-}
-.vimi-media img {
-  width: 500px;
-  height: 375px;
-  border-radius: 10px;
-}
-.vimi-text {
-  width: 50%;
-  margin-left: 20px;
-  margin-top: -20px;
-}
-.vimi-text p {
-  text-indent: 25px;
-}
-.teka-tim {
-  width: 100%;
-}
-.teka-tim h2 {
-  color: rgb(71, 41, 2);
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-bottom: 35px;
-  text-align: center;
-}
-.tim-flex01 {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 25px;
-  margin-top: 50px;
-}
-.tim-flex01 .tim-nama {
-  width: 50%;
-}
-.tim-flex01 .tim-nama img {
-  width: 400px;
-  height: 400px;
-  border-radius: 10px;
-}
-.tim-nama .tim-flex01 .tim-nama h5 {
-  margin-top: -2px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.tim-flex01 .tim-nama p {
-  margin-top: -15px;
-  text-decoration: underline;
-}
-.tim-flex02 {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 25px;
-}
-.tim-flex02 .tim-nama {
-  width: 100%;
-}
-.tim-flex02 .tim-nama img {
-  width: 400px;
-  height: 400px;
-  border-radius: 10px;
-}
-.tim-flex02 .tim-nama h5 {
-  margin-top: -2px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.tim-flex02 .tim-nama p {
-  margin-top: -15px;
-  text-decoration: underline;
-}
-.tim-flex03 {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 25px;
-}
-.tim-flex03 .tim-nama {
-  width: 50%;
-}
-.tim-flex03 .tim-nama img {
-  width: 400px;
-  height: 400px;
-  border-radius: 10px;
-}
-.tim-flex03 .tim-nama h5 {
-  margin-top: -2px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.tim-flex03 .tim-nama p {
-  margin-top: -15px;
-  text-decoration: underline;
-}
-
-#close hr {
-  margin: 50px 0 30px 0;
-}
-#close p {
-  text-align: center;
-  background-color: rgba(210, 105, 30, 0.616);
-  padding: 10px;
-}
-
-/* Saluran */
-
-#saluran {
-  /* margin-top: 50px; */
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.041);
-  padding-bottom: 10px;
-  margin-bottom: -35px;
-}
-#saluran h2 {
-  text-align: center;
-  background-color: rgba(210, 105, 30, 0.253);
-  padding: 15px;
-  font-weight: bold;
-  color: rgb(71, 41, 2);
-}
-#saluran p {
-  text-align: justify;
-  text-indent: 15px;
-  margin: 15px;
-}
-#saluran h5 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 20px;
-}
-
-/* 3. KOMUNITAS */
-#komu {
-  background-color: rgba(0, 0, 0, 0.048);
-}
-#komu h1 {
-  color: rgb(245, 245, 245);
-  text-align: center;
-  background-color: rgba(121, 8, 8, 0.822);
-  padding: 15px;
-  font-family: broadway;
-}
-.tagline {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.tagline img {
-  width: 250px;
-  height: 400px;
-  border-radius: 15px;
-}
-.tagline p {
-  font-size: 25px;
-  color: rgb(17, 0, 255);
-}
-
-.judul {
-  text-align: center;
-  margin-bottom: 50px;
-  text-decoration: underline;
-}
-
-.komu-flex {
-  width: 100%;
-}
-.ibu-liez {
-  display: flex;
-  margin: 30px 15px 45px 15px;
-}
-.liez-media {
-  width: 30%;
-}
-.liez-media img {
-  width: 200px;
-  height: 350px;
-  border-radius: 15px;
-}
-.liez-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.liez-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.liez-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.oshyn {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.oshyn-media {
-  width: 30%;
-}
-.oshyn-media img {
-  width: 200px;
-  height: 350px;
-  border-radius: 15px;
-}
-.oshyn-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.oshyn-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.oshyn-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.ovin {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.ovin-media {
-  width: 30%;
-}
-.ovin-media img {
-  width: 200px;
-  height: 350px;
-  border-radius: 15px;
-}
-.ovin-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.ovin-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.ovin-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.anjelin {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.anjelin-media {
-  width: 30%;
-}
-.anjelin-media img {
-  width: 200px;
-  height: 350px;
-  border-radius: 15px;
-}
-.anjelin-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.anjelin-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.anjelin-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.yuli {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.yuli-media {
-  width: 30%;
-}
-.yuli-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.yuli-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.yuli-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.yuli-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.irsa {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.irsa-media {
-  width: 30%;
-}
-.irsa-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.irsa-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.irsa-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.irsa-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.riki {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.riki-media {
-  width: 30%;
-}
-.riki-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.riki-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.riki-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.riki-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.johan {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.johan-media {
-  width: 30%;
-}
-.johan-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.johan-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.johan-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.johan-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.sandro {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.sandro-media {
-  width: 30%;
-}
-.sandro-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.sandro-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.sandro-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.sandro-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.kalista {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.kalista-media {
-  width: 30%;
-}
-.kalista-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.kalista-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.kalista-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.kalista-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.april {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.april-media {
-  width: 30%;
-}
-.april-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.april-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.april-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.april-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.viani {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.viani-media {
-  width: 30%;
-}
-.viani-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.viani-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.viani-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.viani-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.elo {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.elo-media {
-  width: 30%;
-}
-.elo-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.elo-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.elo-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.elo-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.tere {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.tere-media {
-  width: 30%;
-}
-.tere-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.tere-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.tere-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.tere-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.amel {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.amel-media {
-  width: 30%;
-}
-.amel-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.amel-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.amel-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.amel-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.junior {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.junior-media {
-  width: 30%;
-}
-.junior-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.junior-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.junior-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.junior-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.tian {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.tian-media {
-  width: 30%;
-}
-.tian-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.tian-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.tian-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.tian-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.jonli {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.jonli-media {
-  width: 30%;
-}
-.jonli-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.jonli-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.jonli-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.jonli-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.jonatan {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.jonatan-media {
-  width: 30%;
-}
-.jonatan-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.jonatan-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.jonatan-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.jonatan-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.edgar {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.edgar-media {
-  width: 30%;
-}
-.edgar-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.edgar-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.edgar-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.edgar-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-.aby {
-  display: flex;
-  margin: 45px 15px 45px 15px;
-}
-.aby-media {
-  width: 30%;
-}
-.aby-media img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.aby-kisah {
-  width: 70%;
-  margin-left: 0px;
-  margin-top: -25px;
-}
-.aby-kisah h3 {
-  color: rgb(177, 98, 98);
-  font-family: garamound;
-  width: 100%;
-  background-color: rgba(129, 73, 73, 0.082);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
-  justify-items: center;
-  text-align: center;
-}
-.aby-kisah p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 25px;
-  text-align: justify;
-}
-
-/* Galeri Komu */
-#foto-komu {
-  background-color: rgba(0, 0, 0, 0.055);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-#foto-komu h2 {
-  text-align: center;
-  background-color: rgba(245, 5, 5, 0.185);
-  padding: 15px;
-  margin-bottom: 50px;
-  font-size: 25px;
-}
-.galeri-komu {
-  width: 100%;
-}
-
-.sd-media {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.sd-media img {
-  width: 48%;
-  height: 400px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 30%;
-}
-.sd-text {
-  text-align: center;
-  margin-top: -5px;
-}
-.sd-text p {
-  margin-top: -15px;
-  margin-bottom: 50px;
-}
-
-.smp-media {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.smp-media img {
-  width: 48%;
-  height: 400px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 30%;
-}
-.smp-text {
-  text-align: center;
-  margin-top: -5px;
-}
-.smp-text p {
-  margin-top: -15px;
-  margin-bottom: 50px;
-}
-
-.pendamping-media {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.pendamping-media img {
-  width: 48%;
-  height: 400px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 30%;
-}
-.pendamping-text {
-  text-align: center;
-  margin-top: -5px;
-}
-.pendamping-text p {
-  margin-top: -15px;
-  margin-bottom: 50px;
-}
-
-.koleksi-all {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.koleksi-all img {
-  width: 25%;
-  height: 350px;
-  object-fit: cover;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 10%;
-}
-.koleksi-text h5 {
-  text-align: center;
-  font-size: 24px;
-  margin-top: 18px;
-}
-
-/* 4. KEGIATAN */
-#kegi {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.068);
-}
-#kegi h1 {
-  color: rgb(245, 245, 245);
-  text-align: center;
-  background-color: rgba(121, 8, 8, 0.822);
-  padding: 15px;
-  font-family: broadway;
-}
-.kegi-komu {
-  width: 100%;
-}
-.kegi-komu h2 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgba(33, 9, 243, 0.808);
-}
-.kegi-flex01 {
-  width: 100%;
-  display: flex;
-  margin-bottom: 25px;
-}
-.kegi-image01 {
-  width: 35%;
-}
-.kegi-image01 img {
-  width: 100%;
-  height: 260px;
-  margin-top: 25px;
-  margin-left: 10px;
-}
-.kegi-text01 {
-  width: 65%;
-  margin-left: 25px;
-}
-.kegi-text01 h4 {
-  color: rgba(0, 0, 255, 0.603);
-  text-align: center;
-  font-size: 25px;
-  text-decoration: underline;
-}
-.kegi-text01 p {
-  text-align: justify;
-  text-indent: 25px;
-  margin: 10px;
-}
-.kegi-flex02 {
-  display: flex;
-  width: 100%;
-  margin-bottom: 25px;
-}
-.kegi-text02 {
-  width: 50%;
-  margin-left: 5px;
-}
-.kegi-text02 h4 {
-  color: rgba(0, 0, 255, 0.603);
-  text-align: center;
-  font-size: 25px;
-  text-decoration: underline;
-}
-.kegi-text02 p {
-  text-align: justify;
-  text-indent: 25px;
-  margin: 10px;
-}
-.kegi-image02 {
-  width: 50%;
-}
-.kegi-image02 img {
-  width: 235px;
-  height: 230px;
-  margin-top: 25px;
-  margin-left: 10px;
-  object-fit: cover;
-  margin-top: 35px;
-}
-.kegi-flex03 {
-  width: 100%;
-  display: flex;
-  margin-bottom: 25px;
-}
-.kegi-image03 {
-  width: 35%;
-}
-.kegi-image03 img {
-  width: 100%;
-  height: 215px;
-  margin-top: 25px;
-  margin-left: 10px;
-  object-fit: cover;
-}
-.kegi-text03 {
-  width: 65%;
-  margin-left: 25px;
-}
-.kegi-text03 h4 {
-  color: rgba(0, 0, 255, 0.603);
-  text-align: center;
-  font-size: 25px;
-  text-decoration: underline;
-}
-.kegi-text03 p {
-  text-align: justify;
-  text-indent: 25px;
-  margin: 10px;
-}
-
-.kegi-flex04 {
-  display: flex;
-  width: 100%;
-  margin-bottom: 25px;
-}
-.kegi-text04 {
-  width: 50%;
-  margin-left: 5px;
-}
-.kegi-text04 h4 {
-  color: rgba(0, 0, 255, 0.603);
-  text-align: center;
-  font-size: 25px;
-  text-decoration: underline;
-}
-.kegi-text04 p {
-  text-align: justify;
-  text-indent: 25px;
-  margin: 10px;
-}
-.kegi-image04 {
-  width: 50%;
-}
-.kegi-image04 img {
-  width: 235px;
-  height: 230px;
-  margin-top: 25px;
-  margin-left: 10px;
-  object-fit: cover;
-  margin-top: 35px;
-}
-.kegi-visit {
-  width: 100%;
-}
-
-.kegi-visit h3 {
-  font-size: 25px;
-  text-align: center;
-  background-color: rgba(0, 0, 255, 0.13);
-  padding: 15px;
-  color: chocolate;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.kegi-visit p {
-  text-align: justify;
-  text-indent: 25px;
-  margin: 0 200px;
-  font-size: 20px;
-  padding-bottom: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.dona-flex {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px auto;
-  justify-content: center;
-}
-.dona-flex img {
-  width: 50%;
-  text-align: center;
-  padding: 20px 10px;
-  justify-content: center;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 992px) {
-  /* 1. BERANDA */
-  #hero {
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .kegi-image02 img {
-    width: 230px;
-  }
-  .kegi-image04 img {
-    width: 230px;
-  }
-  #contact {
-    width: 95%;
-    margin-left: 15px;
-  }
-  #contact h2 {
-    margin: 50px 5px 2px 5px;
-    font-size: 45px;
-  }
-  .contact-deskripsi {
-    text-align: center;
-    font-size: 15px;
-    text-decoration: underline;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-  .contact-button {
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 400px;
-    background-color: #128c7e;
-    padding: 10px;
-    color: cyan;
-    font-size: 16px;
-    border-radius: 10px;
-  }
-  .contact-button:hover {
-    background-color: darkgreen;
-    color: beige;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* 1. BERANDA */
-
-  /* icon humberger */
-  #navigasi-beranda .navigasi-flex label {
-    display: inline-block;
-    color: aqua;
-    font-style: normal;
-    font-size: 28px;
-    padding: 8px;
-  }
-  /* susun ulang menu menjadi vertikal */
-  #navigasi-beranda .navigasi-flex {
-    width: 100%;
-  }
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 120px;
-    left: 0;
-  }
-  nav ul li a {
-    display: block;
-    color: aqua;
-    padding: 0 30px;
-    height: auto;
-    right: 100px;
-    background-color: rgb(143, 2, 2);
-    font-size: 15px;
-  }
-
-  /* pindah posisi ke kanan dan perkecil */
-  .navigasi-menu {
-    position: absolute;
-    left: 300px;
-  }
-  .navigasi-menu h2 {
-    font-size: 20px;
-  }
-  .navigasi-menu p {
-    text-align: justify;
-    font-size: 15px;
-  }
-  .navigasi-menu img {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-  }
-
-  /* untuk menampilkan atau menyembunyikan menu */
-  /* menyembunyikan */
-  #navigasi-beranda nav {
-    display: none;
-  }
-  #navigasi-beranda .navigasi-flex input:checked ~ nav {
-    display: flex;
-  }
-  #hero {
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #hero .text {
-    font-size: 35px;
-    margin-top: -200px;
-  }
-  .text h2 {
-    font-size: 35px;
-    background-color: rgba(195, 169, 236, 0.253);
-    padding: -10px;
-  }
-  .text p {
-    font-size: 15px;
-    margin-top: -50px;
-  }
-  .contact-flex {
-    width: 100%;
-  }
-  .contact-flex .map iframe {
-    width: 400px;
-    height: 300px;
-  }
-  .contact-button {
-    margin-left: 300px;
-  }
-  #kaber h2 {
-    font-size: 25px;
-  }
-  #tka h2 {
-    font-size: 25px;
-  }
-  #kegiatan h2 {
-    font-size: 25px;
-  }
-  #contact h2 {
-    font-size: 25px;
-  }
-
-  /* TENTANG KAMI */
-
-  .seja-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .seja-text {
-    width: 100%;
-    margin: 0 15px;
-  }
-  .seja-video {
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    margin: 15px;
-    margin-bottom: 55px;
-  }
-  .seja-video iframe {
-    width: 325px;
-    height: 280px;
-  }
-  .seja-video p {
-    color: transparent;
-  }
-  #vimi {
-    width: 100%;
-    margin-bottom: 55px;
-  }
-  .vimi-media {
-    width: 40%;
-  }
-  .vimi-media img {
-    width: 300px;
-  }
-  .tim-flex02 .tim-nama img {
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-  }
-  .tim-flex01 .tim-nama img {
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    margin-top: 25px;
-  }
-  .tim-flex03 .tim-nama img {
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-  }
-  .tim-flex01 .tim-nama h5 {
-    margin-top: -2px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .tim-flex01 .tim-nama p {
-    margin-top: -15px;
-    text-decoration: underline;
-  }
-
-  /* 4. KEGIATAN */
-  .kegi-image01 {
-    margin-top: 125px;
-  }
-  .kegi-image02 {
-    margin-top: 125px;
-  }
-  .kegi-image02 img {
-    width: 175px;
-    height: 230px;
-  }
-  .kegi-image03 {
-    margin-top: 100px;
-  }
-  .kegi-image04 img {
-    width: 175px;
-    height: 230px;
-  }
-}
-
-@media screen and (max-width: 658px) {
-  /* 1. BERANDA */
-
-  /* 1. BERANDA */
-
-  /* icon humberger */
-  #navigasi-beranda .navigasi-flex label {
-    display: inline-block;
-    color: aqua;
-    font-style: normal;
-    font-size: 25px;
-    padding: 8px;
-  }
-  /* susun ulang menu menjadi vertikal */
-  #navigasi-beranda .navigasi-flex {
-    width: 100%;
-  }
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 120px;
-    left: 0;
-  }
-  nav ul li a {
-    display: block;
-    color: aqua;
-    padding: 0 30px;
-    height: auto;
-    right: 100px;
-    background-color: rgb(143, 2, 2);
-    font-size: 10px;
-  }
-
-  /* pindah posisi ke kanan dan perkecil */
-  .navigasi-menu {
-    position: absolute;
-    left: 30px;
-  }
-
-  /* untuk menampilkan atau menyembunyikan menu */
-  /* menyembunyikan */
-  #navigasi-beranda nav {
-    display: none;
-  }
-  #navigasi-beranda .navigasi-flex input:checked ~ nav {
-    display: flex;
-  }
-
-  #tka .tka-flex {
-    width: 100%;
-  }
-  .tka-desk {
-    width: 50%;
-  }
-  .tka-video {
-    width: 50%;
-  }
-  .tka-video iframe {
-    width: 95%;
-    height: 300px;
-  }
-  .kegi-flex {
-    width: 100%;
-  }
-  .rumah {
-    width: 50%;
-    text-align: center;
-  }
-  .rumah img {
-    width: 300px;
-  }
-  .rumah p {
-    margin-top: -3px;
-  }
-  .contact-button {
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 230px;
-    background-color: #128c7e;
-    padding: 10px;
-    color: cyan;
-    font-size: 16px;
-    border-radius: 10px;
-  }
-  .contact-flex {
-    width: 95%;
-  }
-  .map {
-    width: 50%;
-  }
-  .sosial-media {
-    width: 180px;
-  }
-  .map iframe {
-    width: 65%;
-    height: 200px;
-  }
-  /* 2. TENTANG KAMI */
-
-  .seja-video {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-  }
-  .seja-video iframe {
-    width: 400px;
-    height: 280px;
-  }
-  .seja-video p {
-    color: transparent;
-  }
-  .teka-vimi h2 {
-    font-size: 20px;
-  }
-  #vimi {
-    width: 100%;
-    margin-bottom: 55px;
-  }
-  .vimi-media {
-    width: 40%;
-  }
-  .vimi-media img {
-    width: 200px;
-  }
-  .vimi {
-    flex-direction: column;
-  }
-  .vimi-media img {
-    margin-left: 150px;
-    width: 280px;
-    margin-bottom: 25px;
-  }
-  .vimi-text {
-    justify-content: center;
-    margin: 15px;
-  }
-  .vimi-text h4 {
-    width: 100%;
-    text-align: center;
-    margin-left: 150px;
-  }
-  .vimi-text ol li {
-    width: 100%;
-    text-align: justify;
-    margin-left: 150px;
-  }
-  .vimi-text p {
-    width: 100%;
-    text-align: center;
-    margin-left: 150px;
-  }
-
-  /* 3. KOMUNITAS */
-
-  .komu-flex {
-    width: 100%;
-  }
-  .ibu-liez {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: -20px -60px 0 -60px;
-  }
-  .liez-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .liez-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .oshyn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .oshyn-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .oshyn-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .ovin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .ovin-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .ovin-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .anjelin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .anjelin-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .anjelin-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .yuli {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .yuli-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .yuli-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .irsa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .irsa-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .irsa-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .riki {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .riki-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .riki-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .johan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .johan-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .johan-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .sandro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .sandro-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .sandro-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .kalista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .kalista-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .kalista-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .april {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .april-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .april-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .viani {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .viani-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .viani-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .elo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .elo-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .elo-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .tere {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .tere-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .tere-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .amel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .amel-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .amel-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .junior {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .junior-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .junior-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .tian {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .tian-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .tian-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .jonli {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .jonli-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .jonli-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .jonatan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .jonatan-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .jonatan-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .edgar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .edgar-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .edgar-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .aby {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px -60px 0 -60px;
-  }
-  .aby-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .aby-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-
-  /* 4. KEGIATAN */
-  .kegi-image02 img {
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-  }
-  .kegi-image04 img {
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-  }
-}
-
-@media screen and (max-width: 481px) {
-  /* 1. BERANDA */
-
-  /* icon humberger */
-  #navigasi-beranda .navigasi-flex label {
-    display: inline-block;
-    color: aqua;
-    font-style: normal;
-    font-size: 25px;
-    padding: 8px;
-  }
-  /* susun ulang menu menjadi vertikal */
-  #navigasi-beranda .navigasi-flex {
-    width: 100%;
-  }
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 120px;
-    left: 0;
-  }
-  nav ul li a {
-    display: block;
-    color: aqua;
-    padding: 0 30px;
-    height: auto;
-    right: 100px;
-    background-color: rgb(143, 2, 2);
-    font-size: 10px;
-  }
-
-  /* pindah posisi ke kanan dan perkecil */
-  .navigasi-menu {
-    position: absolute;
-    left: 30px;
-  }
-
-  /* untuk menampilkan atau menyembunyikan menu */
-  /* menyembunyikan */
-  #navigasi-beranda nav {
-    display: none;
-  }
-  #navigasi-beranda .navigasi-flex input:checked ~ nav {
-    display: flex;
-  }
-
-  /* Hero Image */
-  #hero {
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #hero .text {
-    font-size: 35px;
-    margin-top: -250px;
-  }
-  .text h2 {
-    font-size: 20px;
-    background-color: rgba(195, 169, 236, 0.253);
-    padding: 10px;
-  }
-  .text p {
-    font-size: 10px;
-    margin-top: -30px;
-  }
-  .kaber-text h3 {
-    font-size: 18px;
-  }
-  .kaber-text p {
-    font-size: 12px;
-  }
-  .kaber-file {
-    margin-top: 50px;
-  }
-  .kaber-file p {
-    font-size: 12px;
-  }
-  .tka-flex {
-    width: 100%;
-  }
-  .tka-desk {
-    width: 60%;
-  }
-  .tka-desk p {
-    font-size: 12px;
-  }
-  .tka-video {
-    width: 50%;
-    margin-right: 15px;
-    margin-top: 15px;
-  }
-  .tka-video iframe {
-    width: 100%;
-    height: 200px;
-  }
-  .tka-video a {
-    font-size: 12px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .tka-video button {
-    margin-left: 50px;
-  }
-  .rumah {
-    width: 100%;
-    text-align: center;
-  }
-  .rumah img {
-    width: 400px;
-    height: 350px;
-    border-radius: 5px;
-  }
-  #contact p {
-    font-size: 12px;
-  }
-  .contact-button {
-    margin-left: 150px;
-  }
-  .contact-flex {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .contact-flex h3 {
-    font-size: 20px;
-    margin-left: 100px;
-  }
-  .sosial-media h3 {
-    width: 100%;
-    margin-top: 25px;
-  }
-  .sosial-media a {
-    width: 100%;
-    margin-left: 100px;
-  }
-
-  /* 2. TENTANG KAMI */
-  #teka h1 {
-    font-size: 25px;
-  }
-  .seja-text h2 {
-    font-size: 20px;
-  }
-  .seja-text p {
-    font-size: 12px;
-  }
-  .seja-video {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-  }
-  .seja-video iframe {
-    width: 325px;
-    height: 280px;
-  }
-  .seja-video p {
-    color: transparent;
-  }
-  .teka-vimi h2 {
-    font-size: 20px;
-  }
-  #vimi {
-    width: 100%;
-    margin-bottom: 55px;
-  }
-  .vimi-media {
-    width: 40%;
-  }
-  .vimi-media img {
-    width: 200px;
-  }
-  .vimi {
-    flex-direction: column;
-  }
-  .vimi-media img {
-    margin-left: 75px;
-    width: 300px;
-    margin-bottom: 25px;
-  }
-  .vimi-text {
-    justify-content: center;
-    margin: 15px;
-  }
-  .vimi-text h4 {
-    width: 100%;
-    text-align: center;
-    margin-left: 100px;
-  }
-  .vimi-text ol li {
-    width: 100%;
-    text-align: justify;
-    margin-left: 100px;
-  }
-  .vimi-text p {
-    width: 100%;
-    text-align: center;
-    margin-left: 100px;
-  }
-  .tim-flex02 .tim-nama img {
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-  }
-  .tim-flex01 .tim-nama img {
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-    margin-top: 25px;
-  }
-  .tim-flex03 .tim-nama img {
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  /* 3. KOMUNITAS */
-
-  #komu h1 {
-    font-size: 25px;
-  }
-  .tagline img {
-    width: 250px;
-    height: 400px;
-    border-radius: 10px;
-  }
-  .tagline p {
-    font-size: 16px;
-    text-align: center;
-  }
-  .judul h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-  .ibu-liez {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .liez-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .liez-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .oshyn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .oshyn-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .oshyn-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .ovin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .ovin-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .ovin-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .anjelin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .anjelin-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .anjelin-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .yuli {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .yuli-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .yuli-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .irsa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .irsa-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .irsa-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .riki {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .riki-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .riki-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .johan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .johan-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .johan-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .sandro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .sandro-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .sandro-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .kalista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .kalista-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .kalista-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .april {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .april-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .april-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .viani {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .viani-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .viani-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .elo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .elo-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .elo-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .tere {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .tere-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .tere-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .amel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .amel-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .amel-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .junior {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .junior-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .junior-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .tian {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .tian-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .tian-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .jonli {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .jonli-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .jonli-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .jonatan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .jonatan-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .jonatan-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .edgar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .edgar-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .edgar-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .aby {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-  }
-  .aby-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .aby-kisah p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .sd-media img {
-    width: 200px;
-    height: 250px;
-    border-radius: 15px;
-  }
-  .sd-text h4 {
-    font-size: 12px;
-  }
-  .sd-text p {
-    font-size: 12px;
-  }
-  .smp-media img {
-    width: 200px;
-    height: 250px;
-    border-radius: 15px;
-  }
-  .smp-text h4 {
-    font-size: 12px;
-  }
-  .smp-text p {
-    font-size: 12px;
-  }
-  .pendamping-media img {
-    width: 200px;
-    height: 250px;
-    border-radius: 15px;
-  }
-  .pendamping-text h4 {
-    font-size: 12px;
-  }
-  .pendamping-text p {
-    font-size: 12px;
-  }
-  .koleksi-all img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10%;
-  }
-
-  /* 4. KEGIATAN */
-
-  #kegi h1 {
-    font-size: 25px;
-  }
-  #kegi h4 {
-    font-size: 20px;
-  }
-  .kegi-flex01 {
-    width: 100%;
-    flex-direction: column;
-    margin-top: -120px;
-    margin-left: 75px;
-  }
-  .kegi-image01 {
-    display: flex;
-  }
-  .kegi-image01 img {
-    width: 200px;
-    height: 250px;
-    border-radius: 10px;
-    margin-left: -15px;
-    border-style: outset;
-  }
-  .kegi-image01 .satu {
-    margin: 12px;
-    margin-left: -50px;
-  }
-  .kegi-image01 .dua {
-    margin: 12px;
-    margin-left: 5px;
-  }
-  .kegi-text01 {
-    width: 90%;
-    margin-left: -50px;
-  }
-  .kegi-flex02 {
-    width: 100%;
-    flex-direction: column;
-    margin-left: 75px;
-  }
-  .image02-bantu01 {
-    display: flex;
-    flex-direction: row;
-  }
-  .image02-bantu02 {
-    display: flex;
-    flex-direction: row;
-  }
-  .kegi-image02 img {
-    width: 200px;
-    height: 250px;
-    border-radius: 10px;
-    margin-left: -15px;
-    border-style: outset;
-  }
-  .kegi-image02 .satu {
-    margin: 12px;
-    margin-left: -50px;
-  }
-  .kegi-image02 .dua {
-    margin: 12px;
-    margin-left: 5px;
-  }
-  .kegi-image02 .tiga {
-    margin: 12px;
-    margin-left: -50px;
-  }
-  .kegi-image02 .empat {
-    margin: 12px;
-    margin-left: 1px;
-  }
-  .kegi-text02 {
-    width: 90%;
-    margin-left: -50px;
-  }
-  .kegi-flex03 {
-    width: 100%;
-    flex-direction: column;
-    margin-top: -120px;
-    margin-left: 75px;
-  }
-  .kegi-image03 {
-    display: flex;
-    margin-top: 150px;
-    margin-left: 30px;
-  }
-  .kegi-image03 img {
-    width: 200px;
-    height: 250px;
-    border-radius: 10px;
-    margin-left: -15px;
-    border-style: outset;
-  }
-  .kegi-image03 .satu {
-    margin: 12px;
-    margin-left: -50px;
-  }
-  .kegi-image03 .dua {
-    width: 150px;
-    margin: 12px;
-    margin-left: 5px;
-  }
-  .kegi-text03 {
-    width: 90%;
-    margin-left: -50px;
-  }
-  .kegi-visit p {
-    width: 80%;
-    margin-left: 50px;
-    font-size: 15px;
-  }
-  .kegi-visit {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 412px) {
-  /* 1. BERANDA */
-
-  /* icon humberger */
-  #navigasi-beranda .navigasi-flex label {
-    display: inline-block;
-    color: aqua;
-    font-style: normal;
-    font-size: 20px;
-    padding: 8px;
-  }
-  /* susun ulang menu menjadi vertikal */
-  #navigasi-beranda .navigasi-flex {
-    width: 100%;
-  }
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 120px;
-    left: 0;
-  }
-  nav ul li a {
-    display: block;
-    color: aqua;
-    padding: 0 30px;
-    height: auto;
-    right: 100px;
-    background-color: rgb(143, 2, 2);
-    font-size: 10px;
-  }
-
-  /* pindah posisi ke kanan dan perkecil */
-  .navigasi-menu {
-    position: absolute;
-    left: 20px;
-  }
-
-  /* untuk menampilkan atau menyembunyikan menu */
-  /* menyembunyikan */
-  #navigasi-beranda nav {
-    display: none;
-  }
-  .navigasi-menu h2 {
-    font-size: 18px;
-  }
-  .navigasi-menu p {
-    font-size: 14px;
-    margin-left: 110px;
-  }
-  #hero {
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #hero .text {
-    margin-top: -350px;
-  }
-  .text h2 {
-    font-size: 16px;
-  }
-  .text p {
-    font-size: 10px;
-  }
-  .kaber-flex {
-    display: flex;
-    flex-direction: column;
-  }
-  .kaber-file {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .kaber-file img {
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-    margin-top: -10px;
-  }
-  .kaber-text h3 {
-    font-size: 16px;
-    margin-top: 10px;
-    text-align: center;
-  }
-  .tka-flex {
-    width: 100%;
-    flex-direction: column;
-  }
-  .tka-desk {
-    width: 100%;
-    margin-left: 15px;
-  }
-  .tka-video {
-    width: 95%;
-    margin-right: 15px;
-    margin-top: 15px;
-  }
-  .tka-video button {
-    margin-left: 100px;
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-  .rumah img {
-    width: 300px;
-    height: 250px;
-    border-radius: 5px;
-  }
-  #contact h2 {
-    margin: 50px 5px 2px 5px;
-    font-size: 25px;
-  }
-  #contact p {
-    font-size: 10px;
-  }
-  .contact-button {
-    margin-left: 110px;
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-  .contact-flex {
-    width: 100%;
-    flex-direction: column;
-    align-items: left;
-  }
-  .map h3 {
-    font-size: 16px;
-  }
-  .sosial-media h3 {
-    width: 100%;
-    margin-top: 25px;
-    font-size: 16px;
-    margin-left: 75px;
-  }
-  .sosial-media a {
-    width: 100%;
-    margin-left: 75px;
-    font-size: 12px;
-  }
-  .sosial-icon {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-  }
-  #close p {
-    font-size: 12px;
-  }
-
-  /* 2. TENTANG KAMI */
-
-  .seja-video {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-  }
-  .vimi-media img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-  }
-  .vimi-text {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin-left: -90px;
-  }
-  .vimi-text p {
-    text-align: justify;
-  }
-
-  /* 3. KOMUNITAS */
-
-  .ibu-liez {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .liez-media {
-    width: 75%;
-  }
-  .liez-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .liez-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .liez-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .liez-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .oshyn {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .oshyn-media {
-    width: 75%;
-  }
-  .oshyn-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .oshyn-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .oshyn-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .oshyn-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .ovin {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .ovin-media {
-    width: 75%;
-  }
-  .ovin-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .ovin-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .ovin-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .ovin-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .anjelin {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .anjelin-media {
-    width: 75%;
-  }
-  .anjelin-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .anjelin-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .anjelin-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .anjelin-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .yuli {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .yuli-media {
-    width: 75%;
-  }
-  .yuli-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .yuli-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .yuli-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .yuli-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .irsa {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .irsa-media {
-    width: 75%;
-  }
-  .irsa-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .irsa-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .irsa-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .irsa-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .riki {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .riki-media {
-    width: 75%;
-  }
-  .riki-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .riki-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .riki-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .riki-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .johan {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .johan-media {
-    width: 75%;
-  }
-  .johan-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .johan-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .johan-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .johan-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .sandro {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .sandro-media {
-    width: 75%;
-  }
-  .sandro-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .sandro-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .sandro-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .sandro-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .kalista {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .kalista-media {
-    width: 75%;
-  }
-  .kalista-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .kalista-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .kalista-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .kalista-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .april {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .april-media {
-    width: 75%;
-  }
-  .april-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .april-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .april-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .april-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .viani {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .viani-media {
-    width: 75%;
-  }
-  .viani-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .viani-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .viani-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .viani-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .elo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .elo-media {
-    width: 75%;
-  }
-  .elo-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .elo-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .elo-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .elo-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .tere {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .tere-media {
-    width: 75%;
-  }
-  .tere-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .tere-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .tere-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .tere-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .amel {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .amel-media {
-    width: 75%;
-  }
-  .amel-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .amel-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .amel-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .amel-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .junior {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .junior-media {
-    width: 75%;
-  }
-  .junior-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .junior-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .junior-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .junior-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .tian {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .tian-media {
-    width: 75%;
-  }
-  .tian-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .tian-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .tian-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .tian-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .jonli {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .jonli-media {
-    width: 75%;
-  }
-  .jonli-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .jonli-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .jonli-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .jonli-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .jonatan {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .jonatan-media {
-    width: 75%;
-  }
-  .jonatan-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .jonatan-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .jonatan-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .jonatan-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .edgar {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .edgar-media {
-    width: 75%;
-  }
-  .edgar-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .edgar-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .edgar-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .edgar-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .aby {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .aby-media {
-    width: 75%;
-  }
-  .aby-media img {
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-  }
-  .aby-kisah {
-    width: 95%;
-    margin-top: -25px;
-  }
-  .aby-kisah h3 {
-    color: rgb(177, 98, 98);
-    font-family: garamound;
-    width: 100%;
-    background-color: rgba(129, 73, 73, 0.082);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
-    justify-items: center;
-    text-align: center;
-  }
-  .aby-kisah p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-indent: 25px;
-    text-align: justify;
-  }
-  .galeri-komunitas {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0px;
-  }
-  .sd-media img {
-    width: 100%;
-    height: 250px;
-    border-radius: 15px;
-  }
-  .smp-media img {
-    width: 100%;
-    height: 250px;
-    border-radius: 15px;
-  }
-  .pendamping-media img {
-    width: 100%;
-    height: 250px;
-    border-radius: 15px;
-  }
-  .koleksi-all {
-    width: 100%;
-  }
-  .koleksi-all img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10%;
-  }
-
-  /* 4. KEGIATAN */
-
-  .kegi-komu p {
-    font-size: 12px;
-    text-indent: 10px;
-    text-align: justify;
-  }
-  .kegi-image01 {
-    display: flex;
-    width: 100%;
-  }
-  .kegi-image01 img {
-    width: 150px;
-    height: 250px;
-    border-radius: 10px;
-  }
-  .kegi-image02 {
-    margin-top: 25px;
-  }
-  .kegi-image02 img {
-    width: 150px;
-    height: 250px;
-    border-radius: 10px;
-  }
-  .kegi-text02 {
-    margin-left: -50px;
-  }
-  .kegi-image03 img {
-    width: 150px;
-    height: 250px;
-    border-radius: 10px;
-  }
-  .kegi-image03 .satu {
-    margin-left: -80px;
-  }
-  .kegi-flex04 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .kegi-text04 h4 {
-    width: 325px;
-    margin-left: 15px;
-  }
-  .kegi-text04 p {
-    width: 300px;
-    margin-left: 35px;
-  }
-  .kegi-image04 img {
-    object-fit: cover;
-    width: 300px;
-    margin-left: 25px;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komunitas - Yayasan Saint Lusia Angello</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font awesome/css/all.css" />
+  </head>
+  <body>
+    <!-- Navigasi Bar -->
+    <div id="navigasi-beranda">
+      <div class="navigasi-flex">
+        <label for="humberger">&#9776;</label>
+        <input type="checkbox" id="humberger" />
+        <div class="navigasi-menu">
+          <img src="media/I.02.jpg" alt="" />
+          <h2>YAYASAN <br />SAINT LUSIA ANGELLO</h2>
+          <p>"Melayani Yang Kecil Dengan Cinta Yang Besar"</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="teka.html">Tentang Kami</a></li>
+            <li><a href="komunitas.html">Komunitas</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="komu">
+      <h1>KOMUNITAS</h1>
+      <div class="tagline">
+        <img src="media/St. Lusia.jpg" alt="" />
+        <p>
+          "Hidupku Akan Bahagia Ketika <br />Aku Telah Membahagiakan Orang Lain"
+        </p>
+      </div>
+      <hr />
+      <div class="judul">
+        <h2>Anggota Komunitas Yayasan Saint Lusia Angello</h2>
+      </div>
+      <div class="komu-flex">
+        <div class="ibu-liez">
+          <div class="liez-media">
+            <img src="media/Ibu Lusia.JPG" alt="" />
+          </div>
+          <div class="liez-kisah">
+            <h3>Ibu Lusia Owa (Ibu Liez)</h3>
+            <hr />
+            <p>
+              Ibu Lusia Owa atau yang biasa dikenal dengan Ibu Liez lahir pada
+              tanggal 08 Juni 1976 di Ende Nusa Tenggara Timur. Beliau adalah
+              anak ketujuh dari tujuh bersaudara dari pasangan Bapak Yoseph
+              Ndore (alm) dan Ibu Yuliana Weni (alm). Beliau menamatkan
+              pendidikan dasar dan Menengah di Koporombo dan melanjutkan
+              pendidikan menengah atas di Ende.
+            </p>
+            <p>
+              Setelah menamatkan pendidikan di SMA, beliau memutuskan untuk
+              mengabdi Tuhan melalui jalan panggilan khusus sebagai seorang
+              Suster ALMA. Beliau menjalani hidup sebagai seorang suster ALMA
+              selama lebih dari 20an tahun dan akhirnya memutuskan untuk
+              menjalani hidup sebagai seorang awam Katolik. Selama menjadi
+              seorang Suster ALMA, Ibu Liez banyak bergelut di bidang pelayanan
+              anak-anak yang berkebutuhan khusus. Hal ini menjadi dasar bagi
+              pelayanan yang sama saat ini pada Yayasan Saint Lusia Angello.
+            </p>
+            <p>
+              Saat ini Ibu Liez memusatkan perhatiannya pada pelayanan kepada
+              anak-anak yang membutuhkan kasih sayang di Panti Asuhan Yayasan
+              Saint Lusia Angello. Yayasan ini didirikan oleh Ibu Liez atas
+              dasar keinginannya untuk terus melayani Allah dalam diri anak-anak
+              yang membutuhkan uluran tangan kasih dari bapak/ibu para donatur
+              sekalian. Saat ini beliau tinggal dan melayani di rumah Panti
+              Asuhan bersama anak-anak Panti Asuhan Yayasan Saint Lusia Angello.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="oshyn">
+          <div class="oshyn-media">
+            <img src="media/Oshyn.JPG" alt="" />
+          </div>
+          <div class="oshyn-kisah">
+            <h3>Roslin Sara (Oshyn)</h3>
+            <hr />
+            <p>
+              Roslin Sara atau yang lebih dikenal dengan nama Oshyn lahir di
+              Ndangakapa pada tanggal 17 Januari 2000. Oshyn adalah anak keempat
+              dari empat bersaudara dari pasangan Bapak Yeremias Dewa dan Ibu
+              Theresia Tei. Oshyn menempuh pendidikan dasar di SD Malasera pada
+              tahun 2005 sampai dengan tahun 2011. Pendidikan menengah ditempuh
+              di SMP Negeri 1 Ende tahun 2011 sampai dengan tahun 2015 dan
+              melanjutkan pendidikan menengah atas di SMA Negeri 1 Ende dari
+              tahun 2015 sampai tahun 2018.
+            </p>
+            <p>
+              Oshyn melanjutkan pendidikan tingginya di STIM St. Mary Petojo -
+              Jakarta Pusat pada tahun 2020. Oshyn mengambil jurusan secretary
+              dan menyelesaikan kuliah ini selama empat tahun. Oshyn
+              menyelesaikan pendidikan tingginya dan diwisuda pada tahun 2024 di
+              Hotel Kartika Grogol - Jakarta Barat.
+            </p>
+            <p>
+              Saat ini Oshyn membantu karya pelayanan di Panti Asuhan Yayasan
+              Saint Lusia Angello dengan membantu mengurusi adik-adiknya. Selain
+              membantu mengurusi adik-adik, Oshyn juga membantu mengurusi
+              administrasi dan keuangan yayasan.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="ovin">
+          <div class="ovin-media">
+            <img src="media/Ovin.jpg" alt="" />
+          </div>
+          <div class="ovin-kisah">
+            <h3>Oviana Aro (Ovin)</h3>
+            <hr />
+            <p>
+              Oviana Aro atau yang biasa disapa Ovin lahir di Koporombo pada
+              tanggal 23 Oktober 2004. Ovin merupakan anak ketiga dari tiga
+              bersaudara yang lahir dari Bapak Antonius Ruti (alm) dan Ibu
+              Philomena Mbona. Ovin menempuh pendidikan dasar di SDK Malasera
+              tahun 2011 sampai tahun 2017. Pendidikan menengah pertama ditempuh
+              di SMP Negeri 1 Nangaroro - Nagekeo dari tahun 2017 sampai dengan
+              tahun 2020. Ovin menempuh pendidikan menengah atas di SMA Negeri 1
+              Nangapanda - Ende tahun 2020 sampai tahun 2023. Saat ini Ovin akan
+              melanjutkan pendidikan tingginya di STIKES RS. Husada Mangga Besar
+              - Jakarta Pusat.
+            </p>
+            <p>
+              Ovin adalah salah satu anak panti yang telah menamatkan pendidikan
+              di SMA. Setelah menamatkan pendidikan di SMA pada 2023 yang lalu,
+              Ovin membantu mengurus adik-adiknya di Panti Asuhan. Saat ini Ovin
+              tinggal bersama Ibu Liez dan membantu mengurusi adik-adiknya
+              sambil melanjutkan pendidikannya di STIKES RS. Husada.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="anjelin">
+          <div class="anjelin-media">
+            <img src="media/Anjeli.jpg" alt="" />
+          </div>
+          <div class="anjelin-kisah">
+            <h3>Anjelina Mae Weni (Anjelin)</h3>
+            <hr />
+            <p>
+              Anjelina Mae Weni atau yang biasa disapa Anjelin lahir di
+              Koporombo pada tanggal 11 Desember 2004. Anjelin merupakan anak
+              ketiga dari enam bersaudara yang lahir dari Bapak Yohanes
+              Goalbertus Ndetu dan Ibu Maria Mae. Anjelin menempuh pendidikan
+              dasar di SDK Malasera tahun 2011 sampai tahun 2017. Pendidikan
+              menengah pertama ditempuh di SMP Negeri 5 Nangapanda - Ende dari
+              tahun 2017 sampai dengan tahun 2020. Anjelin menempuh pendidikan
+              menengah atas di SMA Negeri 1 Nangapanda - Ende tahun 2020 sampai
+              tahun 2023. Saat ini Anjelin akan melanjutkan pendidikan tingginya
+              di STIKES RS. Husada Mangga Besar - Jakarta Pusat.
+            </p>
+            <p>
+              Anjelin adalah salah satu anak panti yang telah menamatkan
+              pendidikan di SMA. Setelah menamatkan pendidikan di SMA pada 2023
+              yang lalu, Anjelin membantu mengurus adik-adiknya di Panti Asuhan.
+              Saat ini Anjelin tinggal bersama Ibu Liez dan membantu mengurusi
+              adik-adiknya sambil melanjutkan pendidikannya di STIKES RS. Husada
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="yuli">
+          <div class="yuli-media">
+            <img src="media/Yuli.JPG" alt="" />
+          </div>
+          <div class="yuli-kisah">
+            <h3>Yulita Gheme (Yuli)</h3>
+            <hr />
+            <p>
+              Yulita Gheme atau yang biasa disapa Yuli lahir di Nggolonio pada
+              tanggal 31 Juli 2005. Yuli merupakan anak kelima dari tujuh
+              bersaudara yang lahir dari Bapak Theodorus Siku dan Ibu Regina
+              Lawo. Yuli menempuh pendidikan dasar di SD Ngglonio tahun 2012
+              sampai tahun 2018. Pendidikan menengah pertama ditempuh di SMP
+              Satu Atap Tunggurambang - Nagekeo dari tahun 2018 sampai dengan
+              tahun 2021. Yuli menempuh pendidikan menengah atas di SMA 3
+              Nggolonio - Nagekeo tahun 2021 sampai tahun 2024.
+            </p>
+            <p>
+              Saat ini Yuli secara penuh membantu Ibu Liez untuk mengurusi
+              adik-adik dan kebutuhan rumah tangga bersama anak-anak panti yang
+              sudah menamatkan pendidikan di SMA.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="irsa">
+          <div class="irsa-media">
+            <img src="media/Irsa.JPG" alt="" />
+          </div>
+          <div class="irsa-kisah">
+            <h3>Maria Restitutaio Laga (Irsa)</h3>
+            <hr />
+            <p>
+              Maria Restitutaio Laga atau yang biasa disapa Irsa lahir di
+              Tongguwaneng pada tanggal 27 Mei 2006. Irsa merupakan anak pertama
+              dari dua bersaudara yang lahir dari Bapak Anselmus Laga dan Ibu
+              Lusia Odilia Londa. Irsa menempuh pendidikan dasar di SD Negeri
+              Reog - Riung tahun 2012 sampai tahun 2018. Pendidikan menengah
+              pertama ditempuh di SMP Satu Atap Riung - Nagekeo dari tahun 2018
+              sampai dengan tahun 2021. Irsa menempuh pendidikan menengah atas
+              di SMK Negeri Riung - Nagekeo tahun 2021 sampai tahun 2024.
+            </p>
+            <p>
+              Saat ini Irsa secara penuh membantu Ibu Liez untuk mengurusi
+              adik-adik dan kebutuhan rumah tangga bersama anak-anak panti yang
+              sudah menamatkan pendidikan di SMA.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="riki">
+          <div class="riki-media">
+            <img src="media/Ricky.jpg" alt="" />
+          </div>
+          <div class="riki-kisah">
+            <h3>Rikardus Ndona Ndore (Ricky)</h3>
+            <hr />
+            <p>
+              Rikardus Ndona Ndore atau yang biasa disapa Ricky lahir di
+              Koporombo pada tanggal 15 Juli 2005. Ricky merupakan anak pertama
+              dari empat bersaudara yang lahir dari Bapak Theofilus Ndona dan
+              Ibu Mama Maria Ma’e. Ricky menempuh pendidikan dasar di SDK
+              Malasera - Ende tahun 2012 sampai tahun 2018. Pendidikan menengah
+              pertama ditempuh di SMP Negeri 5 Nangapanda - Ende dari tahun 2018
+              sampai dengan tahun 2021. Ricky menempuh pendidikan menengah atas
+              di SMK Negeri 2 Ende tahun 2021 sampai tahun 2024.
+            </p>
+            <p>
+              Ricky adalah salah satu anak panti asuhan Yayasan Saint Lusia
+              Angello yang sudah menamatkan pendidikannya di SMA. Ricky juga
+              secara penuh membantu mengurusi adik-adik bersama pengasuh yang
+              lain. Ricky sudah diterima masuk dalam dunia kemiliteran secara
+              khusus bergabung dalam TNI Angkatan Darat. Saat ini, Ricky sedang
+              menempuh pendidikan dan pelatihan Infantri di Jayapura.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="johan">
+          <div class="johan-media">
+            <img src="media/Johan.jpg" alt="" />
+          </div>
+          <div class="johan-kisah">
+            <h3>Yohanes Duna Duri (Johan)</h3>
+            <hr />
+            <p>
+              Yohanes Duna Duri atau yang biasa disapa Johan lahir di Ende pada
+              tanggal 23 Desember 2011. Johan merupakan anak pertama dari empat
+              bersaudara yang lahir dari Bapak Stefanus Duna dan Ibu Melania
+              Yuswati Kodo. Johan menempuh pendidikan dasar di SDK Malasera -
+              Ende tahun 2018 sampai tahun 2024. Johan adalah salah satu anak
+              panti Asuhan Yayasan Saint Lusia Angello yang masuk panti pada
+              tanggal 22 Juni 2024. Johan menjadi salah satu anak panti yang
+              menjadi tanggungan penuh panti.
+            </p>
+            <p>
+              Saat ini Johan sedang menempuh pendidikan di SMP Swasta Kristen di
+              Jakarta Barat dan berada di kelas VIII SMP.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="sandro">
+          <div class="sandro-media">
+            <img src="media/Sandro.jpg" alt="" />
+          </div>
+          <div class="sandro-kisah">
+            <h3>Alexsandro Feto Zeba (Sandro)</h3>
+            <hr />
+            <p>
+              Alexsandro Feto Zeba atau yang biasa disapa Sandro lahir di
+              Koporombo pada tanggal 13 April 2012. Sandro merupakan anak kedua
+              dari tiga bersaudara yang lahir dari Bapak Feliks Feto dan Ibu
+              Maria Palma Mbae. Sandro menempuh pendidikan dasar di SDK Malasera
+              - Ende tahun 2018 sampai tahun 2024. Sandro adalah salah satu anak
+              panti Asuhan Yayasan Saint Lusia Angello yang masuk panti pada
+              tanggal 22 Juni 2024. Sandro menjadi salah satu anak panti yang
+              menjadi tanggungan penuh panti.
+            </p>
+            <p>
+              Saat ini Sandro sedang menempuh pendidikan di SMP Swasta Kristen
+              di Jakarta Barat dan berada di kelas VIII SMP.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="kalista">
+          <div class="kalista-media">
+            <img src="media/Kalista.jpg" alt="" />
+          </div>
+          <div class="kalista-kisah">
+            <h3>Aloysia Kalista Weni (Kalista)</h3>
+            <hr />
+            <p>
+              Aloysia Kalista Weni atau yang biasa disapa Kalista lahir di
+              Koporombo pada tanggal 09 Februari 2012. Kalista merupakan anak
+              pertama dari tiga bersaudara yang lahir dari Bapak Adolfus Dedhi
+              dan Ibu Marsiana Noi. Kalista menempuh pendidikan dasar di SDK
+              Malasera - Ende tahun 2018 sampai tahun 2024. Kalista adalah salah
+              satu anak panti Asuhan Yayasan Saint Lusia Angello yang masuk
+              panti pada tanggal 22 Juni 2024. Kalista menjadi salah satu anak
+              panti yang menjadi tanggungan penuh panti.
+            </p>
+            <p>
+              Saat ini Kalista sedang menempuh pendidikan di SMP Swasta Kristen
+              di Jakarta Barat dan berada di kelas VIII SMP.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="april">
+          <div class="april-media">
+            <img src="media/April.jpg" alt="" />
+          </div>
+          <div class="april-kisah">
+            <h3>Afriliyani Mae Weni (April)</h3>
+            <hr />
+            <p>
+              Afriliyani Mae Weni atau yang biasa disapa April lahir di
+              Koporombo pada tanggal 01 April 2012. April merupakan anak ketiga
+              dari empat bersaudara yang lahir dari Bapak Theofilus Ndona dan
+              Ibu Maria Mae. April menempuh pendidikan dasar di SDK Malasera -
+              Ende tahun 2018 sampai tahun 2024. April adalah salah satu anak
+              panti Asuhan Yayasan Saint Lusia Angello yang masuk panti pada
+              tanggal 22 Juni 2024. April menjadi salah satu anak panti yang
+              menjadi tanggungan penuh panti.
+            </p>
+            <p>
+              Saat ini April sedang menempuh pendidikan di SMP Swasta Kristen di
+              Jakarta Barat dan berada di kelas VIII SMP.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="viani">
+          <div class="viani-media">
+            <img src="media/Vianney.jpg" alt="" />
+          </div>
+          <div class="viani-kisah">
+            <h3>Yohana Vianney Bire (Vianney)</h3>
+            <hr />
+            <p>
+              Yohana Vianney Bire atau yang biasa disapa Vianney lahir di
+              Nangaroro pada tanggal 26 September 2012. Vianney merupakan anak
+              kedua dari tiga bersaudara yang lahir dari Bapak Wadhi Bire dan
+              Ibu Liberta Bule. Vianney menempuh pendidikan dasar di SD Impres
+              Bhoanawa 1 - Ende tahun 2018 sampai tahun 2024. Vianney adalah
+              salah satu anak panti Asuhan Yayasan Saint Lusia Angello yang
+              masuk panti pada tanggal 09 Januari 2025. Vianney menjadi salah
+              satu anak panti yang menjadi tanggungan penuh panti.
+            </p>
+            <p>
+              Saat ini Vianney sedang menempuh pendidikan di SMP Swasta Kristen
+              di Jakarta Barat dan berada di kelas VIII SMP.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="elo">
+          <div class="elo-media">
+            <img src="media/Angello.jpg" alt="" />
+          </div>
+          <div class="elo-kisah">
+            <h3>Babtista Angello Luciano Varanio (Angello)</h3>
+            <hr />
+            <p>
+              Babtista Angello Luciano Varanio atau yang biasa disapa Angello
+              lahir di Gunung Sitoli pada tanggal 30 Mei 2013. Angello merupakan
+              anak pertama yang lahir dari Ibu Anita Hulu. Angello merupakan
+              anak dari Ibu Liez dan menjadi tanggung jawab penuh ibu Liez
+              sebagai orang tua. Angello menempuh pendidikan dasar di SDK Bhakti
+              Luhur - Malang dan sekarang berada di kelas VI. Angello adalah
+              anak pertama panti Asuhan Yayasan Saint Lusia Angello yang
+              sekaligus menjadi salah satu dasar terbentuknya Yayasan Saint
+              Lusia Angello ini. Angello menjadi salah satu anak panti yang
+              menjadi tanggungan penuh panti.
+            </p>
+            <p>
+              Saat ini Angello sedang menempuh pendidikan di SDK Bhakti Luhur
+              Malang dan berada di kelas VI SD.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tere">
+          <div class="tere-media">
+            <img src="media/There.jpg" alt="" />
+          </div>
+          <div class="tere-kisah">
+            <h3>Theresia Calvina Batlayeri (There)</h3>
+            <hr />
+            <p>
+              Theresia Calvina Batlayeri atau yang biasa disapa There lahir di
+              Tangerang pada tanggal 06 Juni 2014. There merupakan anak ketiga
+              dari empat bersaudara yang lahir dari Bapak Petrus Kanisius
+              Batlayeri dan Ibu Roberta Batlayeri (alm.). There menempuh
+              pendidikan dasar di SDK Samaria Kudus dan sekarang ada di kelas V.
+              There adalah salah satu anak panti Asuhan Yayasan Saint Lusia
+              Angello yang masuk panti pada tanggal 27 September 2021. There
+              menjadi salah satu anak panti yang menjadi tanggungan penuh panti.
+            </p>
+            <p>
+              Saat ini There sedang menempuh pendidikan di SDK Samaria Kudus
+              Jakarta Barat dan berada di kelas V SD.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="amel">
+          <div class="amel-media">
+            <img src="media/Amel.jpg" alt="" />
+          </div>
+          <div class="amel-kisah">
+            <h3>Raisa Amelia Krisna (Amel)</h3>
+            <hr />
+            <p>
+              Raisa Amelia Krisna atau yang biasa disapa Amel lahir di Jakarta
+              pada tanggal 15 Juni 2016. Amel merupakan anak keempat dari empat
+              bersaudara yang lahir dari Bapak Oky Joko Krisna dan Ibu Devi
+              Oktapiya. Amel menempuh pendidikan dasar di SDK Samaria Kudus dan
+              sekarang ada di kelas IV. Amel adalah salah satu anak panti Asuhan
+              Yayasan Saint Lusia Angello yang masuk panti pada tanggal 24 Juli
+              2024. Amel menjadi salah satu anak panti yang menjadi tanggungan
+              penuh panti.
+            </p>
+            <p>
+              Saat ini Amel sedang menempuh pendidikan di SDK Samaria Kudus
+              Jakarta Barat dan berada di kelas IV SD.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="junior">
+          <div class="junior-media">
+            <img src="media/Junior.jpg" alt="" />
+          </div>
+          <div class="junior-kisah">
+            <h3>Johanes Junior Radja (Junior)</h3>
+            <hr />
+            <p>
+              Johanes Junior Radja atau yang biasa disapa Junior lahir di
+              Koporombo pada tanggal 26 Juni 2017. Junior merupakan anak pertama
+              dari dua bersaudara yang lahir dari Ibu Yohana Fransiska Penu.
+              Junior menempuh pendidikan dasar di SDK Samaria Kudus dan sekarang
+              ada di kelas II. Junior adalah salah satu anak panti Asuhan
+              Yayasan Saint Lusia Angello yang masuk panti pada tanggal 09 April
+              2022. Junior menjadi salah satu anak panti yang menjadi tanggungan
+              penuh panti.
+            </p>
+            <p>
+              Saat ini Junior sedang menempuh pendidikan di SDK Samaria Kudus
+              Jakarta Barat dan berada di kelas II SD.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="tian">
+          <div class="tian-media">
+            <img src="media/Kristian.jpg" alt="" />
+          </div>
+          <div class="tian-kisah">
+            <h3>Kristiyanto Ndona (Kristian)</h3>
+            <hr />
+            <p>
+              Kristiyanto Ndona atau yang biasa disapa Kristian lahir di
+              Koporombo pada tanggal 12 Agustus 2017. Kristian merupakan anak
+              keempat dari empat bersaudara yang lahir dari Bapak Theofilus
+              Ndona dan Ibu Maria Mae. Kristian menempuh pendidikan dasar di SDK
+              Samaria Kudus dan sekarang ada di kelas II. Kristian adalah salah
+              satu anak panti Asuhan Yayasan Saint Lusia Angello yang masuk
+              panti pada tanggal 20 Juni 2023. Kristian menjadi salah satu anak
+              panti yang menjadi tanggungan penuh panti.
+            </p>
+            <p>
+              Saat ini Kristian sedang menempuh pendidikan di SDK Samaria Kudus
+              Jakarta Barat dan berada di kelas II SD.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="jonli">
+          <div class="jonli-media">
+            <img src="media/Jhonly.jpg" alt="" />
+          </div>
+          <div class="jonli-kisah">
+            <h3>Johanes Jhonly Batlayeri (Jhonly)</h3>
+            <hr />
+            <p>
+              Johanes Jhonly Batlayeri atau yang biasa disapa Jhonly lahir di
+              Saumlaki pada tanggal 18 September 2018. Jhonly merupakan anak
+              keempat dari empat bersaudara yang lahir dari Bapak Petrus
+              Kanisius Batlayeri dan Ibu Roberta Batlayeri (alm.). Jhonly
+              menempuh pendidikan dasar di SDK Samaria Kudus dan sekarang ada di
+              kelas II. Jhonly adalah salah satu anak panti Asuhan Yayasan Saint
+              Lusia Angello yang masuk panti pada tanggal 27 September 2021.
+              Jhonly menjadi salah satu anak panti yang menjadi tanggungan penuh
+              panti.
+            </p>
+            <p>
+              Saat ini Jhonly sedang menempuh pendidikan di SDK Samaria Kudus
+              Jakarta Barat dan berada di kelas II SD.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="jonatan">
+          <div class="jonatan-media">
+            <img src="media/Jonathan.jpg" alt="" />
+          </div>
+          <div class="jonatan-kisah">
+            <h3>Rafael Jonathan Radja (Jonathan)</h3>
+            <hr />
+            <p>
+              Rafael Jonathan Radja atau yang biasa disapa Jonathan lahir di
+              Koporombo pada tanggal 08 Februari 2019. Jonathan merupakan anak
+              kedua dari dua bersaudara yang lahir dari Ibu Yohana Fransiska
+              Penu. Jonathan menempuh pendidikan dasar di SDK Samaria Kudus dan
+              sekarang ada di kelas II. Jonathan adalah salah satu anak panti
+              Asuhan Yayasan Saint Lusia Angello yang masuk panti pada tanggal
+              27 September 2021. Jonathan menjadi salah satu anak panti yang
+              menjadi tanggungan penuh panti.
+            </p>
+            <p>
+              Saat ini Jonathan sedang menempuh pendidikan di SDK Samaria Kudus
+              Jakarta Barat dan berada di kelas II SD.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="edgar">
+          <div class="edgar-media">
+            <img src="media/Edgar.jpg" alt="" />
+          </div>
+          <div class="edgar-kisah">
+            <h3>Thomas Edgar Angel Luciano (Edgar)</h3>
+            <hr />
+            <p>
+              Thomas Edgar Angel Luciano atau yang biasa disapa Edgar lahir di
+              Jakarta pada tanggal 03 Juli 2023. Edgar merupakan anak pertama
+              Ibu Selestina Bano. Edgar sejak masih di dalam kandungan ibunya
+              sudah tinggal di Panti Asuhan Yayasan Saint Lusia Angello. Setelah
+              lahir Edgar diasuh secara penuh oleh Yayasan. Saat ini Edgar
+              berusia 2 tahun. Egdar menjadi tanggungan penuh Yayasan Saint
+              Lusia Angello.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="aby">
+          <div class="aby-media">
+            <img src="media/Abhy.jpg" alt="" />
+          </div>
+          <div class="aby-kisah">
+            <h3>Abimanyu Eka Tama (Abhy)</h3>
+            <hr />
+            <p>
+              Abimanyu Eka Tama atau yang biasa disapa Abhy lahir di Jakarta
+              pada tanggal 15 Januari 2024. Edgar merupakan anak pertama Ibu
+              Yayat Sumianti. Abhy dititipkan di Panti Asuhan Yayasan Saint
+              Lusia Angello pada tangga 24 April 2024 saat Abhy berumur 2 bulan.
+              Abhy menjadi anak dengan status titipan di Yayasan Saint Lusia
+              Angello. Abgy di asuh secara penuh oleh Yayasan. Saat ini Abhy
+              berusia 1 tahun 6 bulan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="foto-komu">
+      <h2>Galeri Komunitas</h2>
+      <div class="galeri-komu">
+        <div class="sd-media">
+          <img src="media/SD.JPG" alt="" />
+          <img src="media/SD 02.JPG" alt="" />
+        </div>
+        <div class="sd-text">
+          <h4>Anak-Anak SD</h4>
+          <p>(There, Jonathan, Jhonly, Junior dan Kristian)</p>
+        </div>
+        <div class="smp-media">
+          <img src="media/SMP.JPG" alt="" />
+          <img src="media/SMP 02.JPG" alt="" />
+        </div>
+        <div class="smp-text">
+          <h5>Anak-Anak SMP</h5>
+          <p>(Johan, Kalista, April, Vianney dan Sandro)</p>
+        </div>
+        <div class="pendamping-media">
+          <img src="media/Pendamping.JPG" alt= />
+          <img src="media/Pendamping 02.JPG" alt="" />
+        </div>
+        <div class="pendamping-text">
+          <h5>Pendamping</h5>
+          <p>(Yuli, Ovin, Ricky, Oshyn dan Anjelin)</p>
+        </div>
+        <div class="koleksi-all">
+          <img src="media/Partikular 03.JPG" alt="" />
+          <img src="media/Partikular 04.JPG" alt="" />
+        </div>
+        <div class="koleksi-text">
+          <h5>Galeri Komunitas</h5>
+        </div>
+      </div>
+    </div>
+    <div id="close">
+      <hr />
+      <p>
+        &copy; Copyright 2025 - Yayasan Saint Lusia Angello - All Right Reserve.
+      </p>
+    </div>
+  </body>
+</html>

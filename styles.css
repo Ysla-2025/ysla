@@ -2281,7 +2281,7 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 481px) {
   /* 1. BERANDA */
 
   /* icon humberger */
@@ -3009,7 +3009,7 @@ nav ul li a:hover {
     width: 100%;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 412px) {
   /* 1. BERANDA */
 
   /* icon humberger */

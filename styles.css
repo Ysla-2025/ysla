@@ -176,9 +176,6 @@ nav ul li a:hover {
 .kaber-text p {
   font-size: small;
 }
-.kaber-text h3 {
-  text-decoration: underline;
-}
 .kaber-text p {
   font-size: 16px;
   font-style: normal;
@@ -1411,7 +1408,6 @@ nav ul li a:hover {
   color: rgba(0, 0, 255, 0.603);
   text-align: center;
   font-size: 25px;
-  text-decoration: underline;
 }
 .kegi-text01 p {
   text-align: justify;
@@ -1431,7 +1427,6 @@ nav ul li a:hover {
   color: rgba(0, 0, 255, 0.603);
   text-align: center;
   font-size: 25px;
-  text-decoration: underline;
 }
 .kegi-text02 p {
   text-align: justify;
@@ -1472,7 +1467,6 @@ nav ul li a:hover {
   color: rgba(0, 0, 255, 0.603);
   text-align: center;
   font-size: 25px;
-  text-decoration: underline;
 }
 .kegi-text03 p {
   text-align: justify;
@@ -1493,7 +1487,6 @@ nav ul li a:hover {
   color: rgba(0, 0, 255, 0.603);
   text-align: center;
   font-size: 25px;
-  text-decoration: underline;
 }
 .kegi-text04 p {
   text-align: justify;

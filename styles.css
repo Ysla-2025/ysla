@@ -1294,6 +1294,7 @@ nav ul li a:hover {
   margin-left: 5px;
   margin-right: 5px;
   border-radius: 30%;
+  object-fit: cover;
 }
 .bayi-text {
   text-align: center;

@@ -1283,6 +1283,27 @@ nav ul li a:hover {
   width: 100%;
 }
 
+.bayi-media {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.bayi-media img {
+  width: 48%;
+  height: 400px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 30%;
+}
+.bayi-text {
+  text-align: center;
+  margin-top: -5px;
+}
+.bayi-text p {
+  margin-top: -15px;
+  margin-bottom: 50px;
+}
+
 .sd-media {
   display: flex;
   width: 100%;
@@ -2845,6 +2866,18 @@ nav ul li a:hover {
     text-indent: 10px;
     text-align: justify;
   }
+  .bayi-media img {
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+  }
+  .bayi-text h4 {
+    font-size: 12px;
+  }
+  .bayi-text p {
+    font-size: 12px;
+  }
+
   .sd-media img {
     width: 200px;
     height: 250px;

@@ -1387,6 +1387,7 @@ nav ul li a:hover {
   margin-top: 18px;
 }
 
+
 /* 4. KEGIATAN */
 #kegi {
   width: 100%;
@@ -1553,6 +1554,18 @@ nav ul li a:hover {
   justify-content: center;
 }
 .dona-flex img {
+  width: 50%;
+  text-align: center;
+  padding: 20px 10px;
+  justify-content: center;
+}
+.dona-flex video {
+  width: 50%;
+  text-align: center;
+  padding: 20px 10px;
+  justify-content: center;
+}
+.dona-flex iframe {
   width: 50%;
   text-align: center;
   padding: 20px 10px;

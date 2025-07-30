@@ -4003,6 +4003,15 @@ nav ul li a:hover {
     object-fit: cover;
     border-radius: 10%;
   }
+  .koleksi-all2 {
+    width: 100%;
+  }
+  .koleksi-all2 img {
+    width: 170px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+  }
 
   /* 4. KEGIATAN */
 
